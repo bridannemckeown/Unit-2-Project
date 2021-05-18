@@ -217,6 +217,7 @@ footer {
         order: 1;
         flex: 0;
         padding: 0 1rem;
+        width: 35%;
     }
     #banner p {
         margin: 0 auto;
