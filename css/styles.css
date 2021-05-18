@@ -1,0 +1,271 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    min-width: 300px;
+    font-family: 'Open Sans', sans-serif;
+    color: #534c57; 
+    background-color: #fafafa;
+}
+
+header,
+#banner,
+#contact,
+footer {
+    background-color: #fafafa;
+}
+#title {
+    font-family: 'Pattaya', sans-serif;
+}
+p {
+    margin-bottom: 2em;
+}
+a {
+    color: #534c57;
+    text-decoration: none;
+}
+a:hover {
+    color: white;
+}
+.nav-list:hover {
+    background-color: #808080;
+}
+
+/* ----Navigation---- */
+
+header {
+    margin: 0;
+    padding-bottom: .5rem;
+    text-align: center;
+}
+
+#title {
+    margin: 0;
+    padding: 15px 10px;
+}
+.nav {
+    display: block;
+    text-transform: uppercase;
+}
+
+.nav-list {
+    margin: .5rem 1rem;
+    padding: 15px 10px;
+    background-color: white;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* ----Banner---- */
+
+#banner {
+    padding: 1rem;
+    text-align: center;
+    color: #908e8d;
+    font-size: 1rem;
+}
+
+.banner-image {
+    width: 70%;
+}
+
+/* ----Main Content---- */
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+#main-portfolio-section {
+    margin: 0;
+    background-color: white;
+    text-align: center;
+}
+
+.main-title {
+    margin: 0;
+    padding: 2.5rem;
+    color: #534c57; 
+    text-transform: uppercase;
+}
+
+.portfolio {
+    margin-top: .5rem;
+    margin-bottom: 3.5rem;
+}
+
+.portfolio-table {
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+.portfolio-image {
+    width: 90%;
+}
+
+.portfolio-tag {
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+    font-size: .9rem;
+    color: #908e8d;
+}
+#skills {
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    background-color: white;
+}
+#skills li {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 2px;
+}
+#skills ul {
+    margin-bottom: .5rem;
+    padding-bottom: 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+#skills p {
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+    font-size: .9rem;
+    color: #908e8d;
+}
+
+
+/* ----Contact---- */
+
+#contact {
+    padding: 0.01rem 1.25rem 2rem;
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1rem;
+    color: #908e8d;
+}
+
+#phone {
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
+
+/* ----Footer---- */
+
+footer {
+    display: flex;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    font-size: .75rem;
+    font-weight: bold;
+    box-shadow: 0 -1px #d8d8d8;    
+}
+.footer-nav a:hover {
+    color: #D3D3D3;
+}
+.full-footer {
+    display: none;
+}
+/* ----------------------------
+     Media Queries
+    ---------------------------- */
+
+@media screen and (min-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        padding-top: 2rem;
+    }
+    .nav {
+        display: flex;
+        padding: 0;
+        justify-content: center;
+    }
+    .nav-list {
+        margin: 0;
+        padding: 2em;
+        background-color: #fafafa;
+        font-weight: bold;
+    }
+    a:hover {
+        color: #D3D3D3;
+    }
+    .nav-list:hover {
+        background-color: #fafafa;
+    }
+    #banner {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 0 2rem;
+        text-align: left; 
+        align-items: flex-start;
+    }
+    .banner-image {
+        order: 1;
+        flex: 0;
+        padding: 0 1rem;
+    }
+    #banner p {
+        margin: 0 auto;
+        padding: 0 1rem;
+        flex: 2 300px;
+        font-size: 1.3rem;
+    }
+    .portfolio-table {
+        display: flex; 
+        flex-direction: row;       
+    }
+    .portfolio {
+        flex: 1 50%;
+    }
+    #contact {
+        padding: 0 6rem 2rem;
+    }
+    #contact span,
+    #contact p {
+        font-size: 1.25rem;
+    }
+    footer {
+        margin-right: 2rem;
+        margin-left: 2rem;
+        margin-bottom: 3rem;
+    }
+    .tablet-footer {
+        display: none;
+    }
+    .full-footer {
+        display: inline-block;
+        margin-left: 20px;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    header {
+        flex-direction: row;
+    }
+    #title {
+        margin-right: auto;
+        margin-left: 1.25rem;
+    }
+    .portfolio {
+        flex: 1 30%;
+    }
+    footer {
+        margin-bottom: 1rem;
+    }
+}
